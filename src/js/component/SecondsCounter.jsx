@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-//import { ProgressPlugin } from "webpack";
-
-//include images into your bundle
 
 //create your first component
 function SecondsCounter(props) {
 	return (
 		<div className="bigCounter">
 			<div className="calendar">
-				<i class="far fa-clock"></i>
+				<i className="far fa-clock"></i>
 			</div>
 			<div className="four">{props.digitFour}</div>
 			<div className="three">{props.digitThree}</div>
