@@ -14,9 +14,9 @@ import SecondsCounter from "./component/SecondsCounter.jsx";
 //render your react application
 let counter = 0;
 setInterval(function() {
-	const four = Math.floor(counter / 1000);
-	const three = Math.floor(counter / 100);
-	const two = Math.floor(counter / 10);
+	const four = Math.floor(counter / 1000) % 10;
+	const three = Math.floor(counter / 100) % 10;
+	const two = Math.floor(counter / 10) % 10;
 	const one = Math.floor(counter % 10);
 	counter++;
 	ReactDOM.render(
